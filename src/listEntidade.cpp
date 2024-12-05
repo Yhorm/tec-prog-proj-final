@@ -22,7 +22,7 @@ const unsigned int listEntidade::getNumKilled()
 
     while(aux != nullptr)
     {
-        if(!(static_cast<Personagens::Personagem*>(*aux)->getAlive()))
+        if(!((*aux)->getAlive()))
         {
             nKilled++;
         }
